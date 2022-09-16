@@ -51,6 +51,10 @@ p {
 
 /* logo */
 
+.header {
+  border-bottom: 1px solid #ECECEC;;
+}
+
 .nav-contact {
   display: flex;
   align-items: center;
@@ -118,6 +122,7 @@ ul {
 }
 
 .site-contact .link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -289,6 +294,11 @@ ul {
   padding: 30px 0;
 }
 
+.card .photo {
+  display: block;
+  max-width: 100%;
+}
+
 .team-list .title {
   margin-bottom: 10px;
 
@@ -297,7 +307,6 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  /* text-align: center; */
 }
 
 .team-list .text {
@@ -321,6 +330,10 @@ ul {
 
 .address-box {
   margin-top: 20px;
+}
+
+.address-box .item + .item {
+  margin-top: 9px;
 }
 
 .address-box .link {
@@ -383,21 +396,23 @@ ul {
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
-.list-portfolio .element {
+/* Альтернатива */
+/* .list-portfolio .element {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; 
+}  */
 
-.list-portfolio .element:nth-child(3n) {
+/* .list-portfolio .element:nth-child(3n) {
   margin-right: 0;
 }
 
 .list-portfolio .element:nth-last-child(-n+3) {
   margin-bottom: 0;
-}
+} */
 
 .element .name {
   padding: 20px 24px;
@@ -414,6 +429,8 @@ ul {
 }
 
 .portfolio-text {
+  margin-top: 4px;
+
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
